@@ -5,17 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="./style.css">
+     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
      <script defer src="./app.js"></script>
     <title>Can You Take a Pic?</title>
 </head>
 <body>
-    <h2>Code voorbeeld met webcam</h2>
+    <h2>Can you find the objects listed below?</h2>
     <video autoplay playsinline muted id="webcam" width="533" height="300"></video><br />
     <div id="label"></div>
     <br />
-    <button id="labelOne">Label one</button>
-    <button id="labelTwo">Label two</button>
-    <button id="labelThree">Label three</button>
+    <button id="waterBtl">Water bottle</button>
+    <button id="phone">Phone</button>
+    <button id="sharpie">Sharpie</button>
     <button id="train">TRAIN</button>
+    <button id="speak">TALK TO ME BABY</button>
+    <div>
+        <label for="file">Upload Image</label>
+        <input type="file" accept="image/*;capture=camera" id="file">
+      </div>
+      
+      <div><img id="output" width="400"/></div>
 </body>
 </html>
