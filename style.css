@@ -1,0 +1,35 @@
+body{
+    background-color: pink;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#label {
+    margin-right: 20vh;
+    margin-left: 20vh;
+    height: 20px;
+    color: white;
+    background-color: rgb(83, 8, 69);
+    text-align: center;
+}
+
+button {
+    background-color: rgb(230, 173, 229);
+    padding: 8px 12px;
+    margin: 4px;
+    font-size: 1em;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(139, 0, 113);
+    color: white;
+}
+
+/* flip the video image */
+video {
+    transform: scaleX(-1);
+}
+
+
