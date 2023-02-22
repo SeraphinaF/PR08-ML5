@@ -2,10 +2,10 @@ const video = document.getElementById("webcam");
 const label = document.getElementById("label");
 
 const waterBtl = document.querySelector("#waterBtl");
-const phone = document.querySelector("#phone");
-const sharpie = document.querySelector("#sharpie");
+// const phone = document.querySelector("#phone");
+// const sharpie = document.querySelector("#sharpie");
 const trainbtn = document.querySelector("#train");
-const speakBtn = document.getElementById('speak');
+// const speakBtn = document.getElementById('speak');
 
 const image = document.getElementById('output')
 const fileButton = document.querySelector("#file")
@@ -18,9 +18,9 @@ fileButton.addEventListener("change", (event) => {
 })
 
 waterBtl.addEventListener("click", () => addWaterBtl());
-phone.addEventListener("click", () => addPhone());
-sharpie.addEventListener("click", () => addSharpie());
-speakBtn.addEventListener("click", () => { speak(`I want to go home!`) });
+// phone.addEventListener("click", () => addPhone());
+// sharpie.addEventListener("click", () => addSharpie());
+// speakBtn.addEventListener("click", () => { speak(`I want to go home!`) });
 trainbtn.addEventListener("click", () => train());
 
 trainbtn.addEventListener("click", () => console.log("train"));
@@ -112,4 +112,3 @@ if (navigator.mediaDevices.getUserMedia) {
       console.log("Something went wrong!");
     });
 }
-
