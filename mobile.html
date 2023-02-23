@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <title>Take a Pic</title>
+</head>
+
+<body>
+    <h2>Can you take a picture of a waterbottle for me?</h2>
+
+    <img src="./spafles.jpeg"></img>
+
+    <div>
+        <label for="file">Upload Image</label>
+        <input type="file" accept="image/*;capture=camera" id="mobileFile">
+    </div>
+
+    <div id="result"></div>
+
+    <button id="classifyBtn">Check</button>
+
+    <script defer src="./mobile.js"></script>
+</body>
+
+</html>
