@@ -1,9 +1,9 @@
 const video = document.getElementById("webcam");
 const label = document.getElementById("label");
 
-const waterBtl = document.querySelector("#waterBtl");
-// const phone = document.querySelector("#phone");
-// const sharpie = document.querySelector("#sharpie");
+const rose = document.querySelector("#rose");
+const cat = document.querySelector("#cat");
+const piano = document.querySelector("#piano");
 const trainbtn = document.querySelector("#train");
 // const speakBtn = document.getElementById('speak');
 
@@ -17,9 +17,9 @@ fileButton.addEventListener("change", (event) => {
   image.src = URL.createObjectURL(event.target.files[0])
 })
 
-waterBtl.addEventListener("click", () => addWaterBtl());
-// phone.addEventListener("click", () => addPhone());
-// sharpie.addEventListener("click", () => addSharpie());
+rose.addEventListener("click", () => addRose());
+cat.addEventListener("click", () => addCat());
+piano.addEventListener("click", () => addPiano());
 // speakBtn.addEventListener("click", () => { speak(`I want to go home!`) });
 trainbtn.addEventListener("click", () => train());
 
@@ -48,20 +48,20 @@ function videoReady() {
 }
 
 //functions to take pictures
-function addWaterBtl() {
-  classifier.addImage(video, 'this is a water bottle', () => {
-    console.log("added waterbottle to model!");
+function addRose() {
+  classifier.addImage(video, 'this is a rose', () => {
+    console.log("added rose to model!");
   })
 }
-function addPhone() {
-  classifier.addImage(video, 'this is a phone', () => {
-    console.log("added phone to model!");
+function addCat() {
+  classifier.addImage(video, 'this is a cat', () => {
+    console.log("added cat to model!");
   })
 }
 
-function addSharpie() {
-  classifier.addImage(video, 'this is a sharpie', () => {
-    console.log("added sharpie to model!");
+function addPiano() {
+  classifier.addImage(video, 'this is a piano', () => {
+    console.log("added piano to model!");
   })
 }
 
