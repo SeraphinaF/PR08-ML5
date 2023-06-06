@@ -11,18 +11,19 @@
 </head>
 
 <body>
-    <h2>Can you take a picture of a waterbottle for me?</h2>
+    <h2>Can you take a picture of a rose for me?</h2>
 
-    <img id="output" src="./spafles.jpeg"/>
+ 
 
     <div>
-        <label for="file">Upload Image</label>
-        <input type="file" accept="image/*;capture=camera" id="mobileFile">
+        <label for="Picture">Take a picture</label>
     </div>
-
+    <div id="imageContainer"></div>
     <div id="result"></div>
+    <video autoplay playsinline muted id="webcam" width="533" height="300"></video><br />
 
-    <button id="classifyBtn">Check</button>
+    <button id="takePicBtn">Click!</button>
+    <button id="classifyBtn">Send</button>
 
     <script defer src="./mobile.js"></script>
 </body>
